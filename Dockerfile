@@ -21,7 +21,6 @@ RUN gem install -N pkg-config -- --use-system-libraries \
   && find / -type f -iname \*.apk-new -delete \
   && rm -rf /var/cache/apk/* \
   && rm -rf /usr/lib/lib/ruby/gems/*/cache/* \
-  && rm -rf ~/.gem \
-  && echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+  && rm -rf ~/.gem
 
 EXPOSE 3000
